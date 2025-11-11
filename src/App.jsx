@@ -1,15 +1,23 @@
-function App() {
+import React from "react";
+import Header from "./components/Header";
+import AppRoutes from "./routes/AppRoutes";
+import Footer from "./components/Footer";
+
+const App = () => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm text-center">
-      <h2 className="text-2xl font-bold text-gray-800">Tailwind Card</h2>
-      <p className="text-gray-600 mt-3">
-        This is a simple card layout built with Tailwind CSS.
-      </p>
-      <button className="bg-red-600 tet text-white font-bold py-2 px-4 rounded mt-4">
-        Haha
-      </button>
+    <div className="flex flex-col min-h-screen">
+      {/* Header stays on top */}
+      <Header />
+
+      {/* Main content grows to fill space */}
+      <main className="flex-grow">
+        <AppRoutes />
+      </main>
+
+      {/* Footer always at bottom */}
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
