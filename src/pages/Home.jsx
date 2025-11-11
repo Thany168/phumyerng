@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div className="space-y-16">
       {/* Hero Section */}
-      <section className="bg-linear-to-r from-purple-400 via-pink-500 to-red-400 text-white py-32 px-6 text-center rounded-b-3xl relative overflow-hidden">
+      <section className="bg-linear-to-r from-purple-400 via-green-600 to--400 text-white py-32 px-6 text-center rounded-b-3xl relative overflow-hidden">
         <h1 className="text-4xl md:text-6xl font-extrabold mb-6">
           Create Beautiful E-Invitations Instantly
         </h1>
@@ -125,7 +125,7 @@ const Home = () => {
             </div>
             <h3 className="font-semibold text-xl mb-2">Send & Share</h3>
             <p className="text-gray-500">
-              Share online invitations or download PDF.
+              Share online invitations or Generate link.
             </p>
           </div>
         </div>
